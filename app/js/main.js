@@ -144,5 +144,18 @@ $(function () {
     });
   }
 
+  const burger = document.querySelector('.burger-btn');
+  const closeMenu = document.querySelector('.side-menu__btn');
+  const mobileMenu = document.querySelector('.side-menu');
+
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.add('side-menu--active');
+    bodyLock.classList.add('lock');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('side-menu--active');
+    bodyLock.classList.remove('lock');
+  });
 });
 
