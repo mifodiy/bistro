@@ -176,6 +176,89 @@ $(function () {
     mobileMenu.classList.remove('opened');
   });
 
+  const heroImg = document.querySelectorAll('.hero__img');
+  const responsibility = document.querySelector('.responsibility');
+  const career = document.querySelector('.career');
+  let heroImgWidth;
+
+  if (heroImg != null) {
+
+    heroImg.forEach(el => {
+      heroImgWidth = el.offsetWidth;
+
+      if (heroImgWidth > 1229){
+        el.style.clipPath = `path("m 10 80 c 0 -41.4213 33.5786 -75 75 -75 h ${heroImgWidth-170} c 41.42 0 75 33.5787 75 75 v 588 c 0 52.467 -42.53 95 -95 95 h -${heroImgWidth-210} c -41.9727 0 -78.1933 24.628 -95 60.221 v -743.221 Z")`;   
+      } else {
+        el.style.clipPath = `path("m 10 40 c 0 -19.33 15.67 -35 35 -35 h ${heroImgWidth-90} c 19.33 0 35 15.67 35 35 v 627 c 0 30.376 -24.624 55 -55 55 h -${heroImgWidth-130} c -23.1577 0 -43.4868 12.11 -55 30.343 v -712.343 Z")`; 
+      }
+    })
+		 
+	}
+
+  if (responsibility != null) {
+    let responsibilityWidth = responsibility.offsetWidth;
+    let responsibilityHeight = responsibility.offsetHeight;
+
+    if (responsibilityWidth > 1229){
+      responsibility.style.clipPath = `path("m ${responsibilityWidth-10} 43.0799 c -17 35.5931 -55 60.2201 -95 60.2201 h -${responsibilityWidth-210} c -52.467 0 -95 42.533 -95 95 v ${responsibilityHeight-347} c 0 52.467 42.533 95 95 95 h ${responsibilityWidth-210} c 40 0 78 24.627 95 60.22 v -1123.88 Z")`;
+    } else {
+      responsibility.style.clipPath = `path("m ${responsibilityWidth-10} 34.6569 c -11.513 18.2329 -31.842 30.3431 -55 30.3431 h -${responsibilityWidth-130} c -30.3757 0 -55 24.6243 -55 55 v ${responsibilityHeight-205} c 0 30.38 24.6243 55 55 55 h ${responsibilityWidth-130} c 23.158 0 43.487 12.11 55 30.34 v -1096.68 Z")`;
+    }
+
+    
+  }
+
+  if (career != null) {
+    let careerWidth = career.offsetWidth;
+
+    if (careerWidth > 1229){
+      career.style.clipPath = `path("m 10 762 v -595.221 c 16.8067 35.5931 53.0273 60.2206 95 60.2206 h ${careerWidth-210} c 52.47 0 95 42.533 95 95 v 440 h -${careerWidth+199} Z")`;
+    } else {
+      career.style.clipPath = `path("m 10 908.984 v -744.622 c 11.3608 17.812 31.2947 29.625 53.9875 29.62 h ${careerWidth-129} c 30.376 0 55 24.6244 55 55.0005 v 659.996 h -${careerWidth-100} Z")`;
+    }
+    
+  }
+
+  window.addEventListener("resize", function(){
+
+    if (heroImg != null) {
+
+      heroImg.forEach(el => {
+        heroImgWidth = el.offsetWidth;
+  
+        if (heroImgWidth > 1229){
+          el.style.clipPath = `path("m 10 80 c 0 -41.4213 33.5786 -75 75 -75 h ${heroImgWidth-170} c 41.42 0 75 33.5787 75 75 v 588 c 0 52.467 -42.53 95 -95 95 h -${heroImgWidth-210} c -41.9727 0 -78.1933 24.628 -95 60.221 v -743.221 Z")`;   
+        } else {
+          el.style.clipPath = `path("m 10 40 c 0 -19.33 15.67 -35 35 -35 h ${heroImgWidth-90} c 19.33 0 35 15.67 35 35 v 627 c 0 30.376 -24.624 55 -55 55 h -${heroImgWidth-130} c -23.1577 0 -43.4868 12.11 -55 30.343 v -712.343 Z")`; 
+        }  
+      })
+       
+    }
+
+    if (responsibility != null) {
+    responsibilityWidth = responsibility.offsetWidth;
+    responsibilityHeight = responsibility.offsetHeight;
+
+    if (responsibilityWidth > 1229){
+      responsibility.style.clipPath = `path("m ${responsibilityWidth-10} 43.0799 c -17 35.5931 -55 60.2201 -95 60.2201 h -${responsibilityWidth-210} c -52.467 0 -95 42.533 -95 95 v ${responsibilityHeight-347} c 0 52.467 42.533 95 95 95 h ${responsibilityWidth-210} c 40 0 78 24.627 95 60.22 v -1123.88 Z")`;
+    } else {
+      responsibility.style.clipPath = `path("m ${responsibilityWidth-10} 34.6569 c -11.513 18.2329 -31.842 30.3431 -55 30.3431 h -${responsibilityWidth-130} c -30.3757 0 -55 24.6243 -55 55 v ${responsibilityHeight-205} c 0 30.38 24.6243 55 55 55 h ${responsibilityWidth-130} c 23.158 0 43.487 12.11 55 30.34 v -1096.68 Z")`;
+    }
+    }
+
+    if (career != null) {
+    careerWidth = career.offsetWidth;
+    
+    if (careerWidth > 1229){
+      career.style.clipPath = `path("m 10 762 v -595.221 c 16.8067 35.5931 53.0273 60.2206 95 60.2206 h ${careerWidth-210} c 52.47 0 95 42.533 95 95 v 440 h -${careerWidth+199} Z")`;
+    } else {
+      career.style.clipPath = `path("m 10 908.984 v -744.622 c 11.3608 17.812 31.2947 29.625 53.9875 29.62 h ${careerWidth-129} c 30.376 0 55 24.6244 55 55.0005 v 659.996 h -${careerWidth-100} Z")`;
+    }
+
+    }
+
+  });
+
 
 });
 
