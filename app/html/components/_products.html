@@ -1,0 +1,216 @@
+<section class="products">
+  <div class="container">
+
+    <div class="products__inner">
+
+      <aside class="category-filter">
+        <div class="category-filter__header">
+          <p class="category-filter__text">Готові замовити?</p>
+          <button class="category-filter__btn order-btn">Замовити</button>
+        </div>
+
+        <nav class="category-menu">
+          <button class="category-menu__btn" role="button" data-value=""><span>Бургери</span></button>
+          <ul class="category-menu__list">
+
+            <li class="category-menu__item" data-value="1">
+              <a class="category-menu__link" href="#">Улюблені</a>
+            </li>
+
+            <li class="category-menu__item" data-value="2">
+              <a class="category-menu__link" href="#">Всі категорії</a>
+            </li>
+
+            <li class="category-menu__item" data-value="3">
+              <a class="category-menu__link" href="#">Напої</a>
+            </li>
+
+            <li class="category-menu__item" data-value="4">
+              <a class="category-menu__link category-menu__link--active" href="#">Бургери</a>
+            </li>
+
+            <li class="category-menu__item" data-value="5">
+              <a class="category-menu__link" href="#">Сніданки</a>
+            </li>
+
+            <li class="category-menu__item" data-value="6">
+              <a class="category-menu__link" href="#">Обіди</a>
+            </li>
+
+            <li class="category-menu__item" data-value="7">
+              <a class="category-menu__link" href="#">Десерти</a>
+            </li>
+
+            <li class="category-menu__item" data-value="8">
+              <a class="category-menu__link" href="#">Ціна на весь день</a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="products__content">
+        <form class="product-search" action="#">
+          <input class="product-search__input" type="text" name="product-search" placeholder=" ">
+          <label class="product-search__label">Пошук</label>
+        </form>
+
+        <ul class="category-tags">
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-all-tag" value="all">
+            <label class="category-tags__label" for="category-all-tag">Всі</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-savory-tag"
+              value="savory">
+            <label class="category-tags__label" for="category-savory-tag">Сендвічі</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-togo-fave-tag"
+              value="togo-fave">
+            <label class="category-tags__label" for="category-togo-fave-tag">Обране</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-featured-tag"
+              value="featured">
+            <label class="category-tags__label" for="category-featured-tag">Улюблені</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-sweet-tag" value="sweet">
+            <label class="category-tags__label" for="category-sweet-tag">Десерт</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-vegetarian-tag"
+              value="vegetarian">
+            <label class="category-tags__label" for="category-vegetarian-tag">Вегетаріанські</label>
+          </li>
+
+        </ul>
+
+        <ul class="products-list">
+
+          <li class="products-list__item">
+
+            <article class="product-card">
+              <img class="product-card__img" src="images/product/burger/burger-1.jpg" alt="Зробіть власний бургер"
+                loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Зробіть власний бургер</h3>
+                <span class="product-card__number">Cal 1250-570</span>
+                <div class="product-card__text">
+                  <p>Листя салату, помідори, червона цибуля, солоні огірки та булочка бріош включені. Подається з
+                    хвилеподібно нарізаною картоплею фрі.</p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card product-card--fave">
+              <img class="product-card__img" src="images/product/burger/burger-2.jpg" alt="Подвійний Чізбургер"
+                loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Подвійний Чізбургер</h3>
+                <span class="product-card__number">Cal 1580-120</span>
+                <div class="product-card__text">
+                  <p>На вибір американський, швейцарський або витриманий білий сир чеддер з листям салату, помідорами,
+                    червоною цибулею та маринованими огірками на булочці бріош.</p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card">
+              <img class="product-card__img" src="images/product/burger/burger-3.jpg"
+                alt="Чізбургер з беконом і авокадо" loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Чізбургер з беконом і авокадо</h3>
+                <span class="product-card__number">Cal 1510-670</span>
+                <div class="product-card__text">
+                  <p>Бекон, свіжий авокадо, витриманий білий сир чеддер, майонез, листя салату, помідори, червона цибуля
+                    та мариновані огірки на булочці бріош.</p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card">
+              <img class="product-card__img" src="images/product/burger/burger-4.jpg" alt="Бурбон Бургер з беконом"
+                loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Бурбон Бургер з беконом</h3>
+                <span class="product-card__number">Cal 680-1570</span>
+                <div class="product-card__text">
+                  <p>Витриманий білий сир чеддер, бекон, пасеровані гриби, смажений болгарський перець і цибуля,
+                    соус бурбон, листя салату, помідори, червона цибуля та солоні огірки на булочці бріош.
+                    Подається з хвилястою нарізкою
+                    картопля фрі</p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card product-card--fave">
+              <img class="product-card__img" src="images/product/burger/burger-5.jpg" alt="Бургер з яйцем"
+                loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Бургер з яйцем</h3>
+                <span class="product-card__number">Cal 340-1820
+                </span>
+                <div class="product-card__text">
+                  <p>Яйце, бекон і американський сир на булочці бріош. Подається з хвилеподібно нарізаною картоплею фрі.
+                  </p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card">
+              <img class="product-card__img" src="images/product/burger/burger-5.jpg" alt="Гострий Бургер">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Гострий Бургер
+                </h3>
+                <span class="product-card__number">Cal 800-1290
+                </span>
+                <div class="product-card__text">
+                  <p>Витриманий білий сир чеддер, бекон, халапеньо, соус із 5 перців, майонез, листя салату, помідори,
+                    червона цибуля та мариновані огірки на булочці бріош.
+                  </p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ресторани швидкого харчування | Бургери</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+<header class="header">
+
+  <div class="header__inner">
+    <button class="burger-btn">
+      <span class="burger-btn__line"></span>
+      <span class="sr-only">Открыть меню</span>
+    </button>
+
+    <div class="auth-and-translate">
+      <button class="auth-btn">
+        <span>Sign In</span>
+      </button>
+      <label class="translate switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+        <span>English</span>
+      </label>
+    </div>
+
+    <nav class="menu">
+
+      <ul class="menu__list">
+
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            Меню
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            Наші заклади
+          </a>
+        </li>
+
+        <li class="menu__logo">
+          <a class="menu__logo logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            Нагороди
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <button class="menu__link menu__link--aboutus">Про нас</button>
+          <nav class="aboutus-menu">
+            <ul class="aboutus-menu__list">
+
+              <li class="aboutus-menu__item">
+                <a class="aboutus-menu__link" href="#">
+                  <img class="aboutus-menu__img" src="images/about-company.jpg" alt="Компанія" width="390" height="390"
+                    loading="lazy">
+                  <span class="aboutus-menu__title">Компанія</span>
+                </a>
+              </li>
+
+              <li class="aboutus-menu__item">
+                <a class="aboutus-menu__link" href="#">
+                  <img class="aboutus-menu__img" src="images/about-resp.jpg" alt="Соціальний вплив" width="390"
+                    height="390" loading="lazy">
+                  <span class="aboutus-menu__title">Соціальний вплив</span>
+                </a>
+              </li>
+
+              <li class="aboutus-menu__item">
+                <a class="aboutus-menu__link" href="#">
+                  <img class="aboutus-menu__img" src="images/about-career.jpg" alt="Кар'єра" width="390" height="390"
+                    loading="lazy">
+                  <span class="aboutus-menu__title">Кар'єра</span>
+                </a>
+              </li>
+
+              <li class="aboutus-menu__item">
+                <a class="aboutus-menu__link" href="#">
+                  <img class="aboutus-menu__img" src="images/about-diversity.jpg" alt="Відмінність" width="390"
+                    height="390" loading="lazy">
+                  <span class="aboutus-menu__title">Відмінність</span>
+                </a>
+              </li>
+
+              <li class="aboutus-menu__item">
+                <a class="aboutus-menu__link" href="#">
+                  <img class="aboutus-menu__img" src="images/about-news.jpg" alt="Новини" width="390" height="390"
+                    loading="lazy">
+                  <span class="aboutus-menu__title">Новини</span>
+                </a>
+              </li>
+
+              <li class="aboutus-menu__item">
+                <a class="aboutus-menu__link" href="#">
+                  <img class="aboutus-menu__img" src="images/about-contact.jpg" alt="Контакти" width="390" height="390"
+                    loading="lazy">
+                  <span class="aboutus-menu__title">Контакти</span>
+                </a>
+              </li>
+
+              <li class="aboutus-menu__item">
+                <a class="aboutus-menu__link" href="#">
+                  <img class="aboutus-menu__img" src="images/about-franchising.jpg" alt="Франчайзинг" width="390"
+                    height="390" loading="lazy">
+                  <span class="aboutus-menu__title">Франчайзинг</span>
+                </a>
+              </li>
+
+              <li class="aboutus-menu__item">
+                <a class="aboutus-menu__link" href="#">
+                  <img class="aboutus-menu__img" src="images/about-investor.jpg" alt="Інвестори" width="390"
+                    height="390" loading="lazy">
+                  <span class="aboutus-menu__title">Інвестори</span>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+
+        </li>
+      </ul>
+
+    </nav>
+
+    <div class="header__btns">
+      <button class="header__order order-btn">Замовити</button>
+      <button class="header__cart">
+      </button>
+    </div>
+
+  </div>
+
+  <div class="side-menu">
+    <div class="side-menu__wrapper">
+
+      <div class="side-menu__inner">
+
+        <button class="side-menu__btn">
+          <span class="side-menu__line"></span>
+          <span class="sr-only">Закрыть меню</span>
+        </button>
+
+        <h2 class="side-menu__title">
+          <span class="small">Hello</span>
+          <span class="big">Welcome</span>
+        </h2>
+
+        <ul class="side-menu__list">
+
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">
+              Меню
+            </a>
+          </li>
+
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">
+              Наші заклади
+            </a>
+          </li>
+
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">
+              Нагороди
+            </a>
+          </li>
+
+          <li class="side-menu__item">
+            <button class="side-menu__link side-menu__link--aboutus">
+              Про нас
+            </button>
+          </li>
+
+        </ul>
+
+        <ul class="user-links">
+
+          <li class="user-links__item">
+            <a class="user-links__link" href="#">Log in</a>
+          </li>
+
+          <li class="user-links__item">
+            <a class="user-links__link" href="#">Sign up</a>
+          </li>
+
+        </ul>
+
+
+        <ul class="social-list">
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#facebook');">
+              <span class="sr-only">facebook сторінка</span>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#instagram');">
+              <span class="sr-only">instagram сторінка</span>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#twitter');">
+              <span class="sr-only">twitter сторінка</span>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#youtube');">
+              <span class="sr-only">youtube канал</span>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#linkedin');">
+              <span class="sr-only">linkedin сторінка</span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="aboutus-mobile">
+
+        <button class="aboutus-mobile__btn">Назад</button>
+
+        <ul class="aboutus-mobile__list">
+
+          <li class="aboutus-mobile__item">
+            <a class="aboutus-mobile__link" href="#">Компанія</a>
+            <img class="aboutus-mobile__img" src="images/about-company.jpg" alt="Компанія" width="390" height="390"
+              loading="lazy">
+          </li>
+
+          <li class="aboutus-mobile__item">
+            <a class="aboutus-mobile__link" href="#">Соціальний вплив</a>
+            <img class="aboutus-mobile__img" src="images/about-resp.jpg" alt="Соціальний вплив" width="390" height="390"
+              loading="lazy">
+          </li>
+
+          <li class="aboutus-mobile__item">
+            <a class="aboutus-mobile__link" href="#">Кар'єра</a>
+            <img class="aboutus-mobile__img" src="images/about-career.jpg" alt="Кар'єра" width="390" height="390"
+              loading="lazy">
+          </li>
+
+          <li class="aboutus-mobile__item">
+            <a class="aboutus-mobile__link" href="#">Відмінність</a>
+            <img class="aboutus-mobile__img" src="images/about-diversity.jpg" alt="Відмінність" width="390" height="390"
+              loading="lazy">
+          </li>
+
+          <li class="aboutus-mobile__item">
+            <a class="aboutus-mobile__link" href="#">Новини</a>
+            <img class="aboutus-mobile__img" src="images/about-news.jpg" alt="Новини" width="390" height="390"
+              loading="lazy">
+          </li>
+
+          <li class="aboutus-mobile__item">
+            <a class="aboutus-mobile__link" href="#">Контакти</a>
+            <img class="aboutus-mobile__img" src="images/about-contact.jpg" alt="Контакти" width="390" height="390"
+              loading="lazy">
+          </li>
+
+          <li class="aboutus-mobile__item">
+            <a class="aboutus-mobile__link" href="#">Франчайзинг</a>
+            <img class="aboutus-mobile__img" src="images/about-franchising.jpg" alt="Франчайзинг" width="390"
+              height="390" loading="lazy">
+          </li>
+
+          <li class="aboutus-mobile__item">
+            <a class="aboutus-mobile__link" href="#">Інвестори</a>
+            <img class="aboutus-mobile__img" src="images/about-investor.jpg" alt="Інвестори" width="390" height="390"
+              loading="lazy">
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+  <main class="main">
+    <section class="menu-header">
+  <div class="menu-header__inner">
+    <span class="menu-header__subtitle">перегляньте</span>
+    <h1 class="menu-header__title">наше меню</h1>
+  </div>
+</section>
+    <section class="products">
+  <div class="container">
+
+    <div class="products__inner">
+
+      <aside class="category-filter">
+        <div class="category-filter__header">
+          <p class="category-filter__text">Готові замовити?</p>
+          <button class="category-filter__btn order-btn">Замовити</button>
+        </div>
+
+        <nav class="category-menu">
+          <button class="category-menu__btn" role="button" data-value=""><span>Бургери</span></button>
+          <ul class="category-menu__list">
+
+            <li class="category-menu__item" data-value="1">
+              <a class="category-menu__link" href="#">Улюблені</a>
+            </li>
+
+            <li class="category-menu__item" data-value="2">
+              <a class="category-menu__link" href="#">Всі категорії</a>
+            </li>
+
+            <li class="category-menu__item" data-value="3">
+              <a class="category-menu__link" href="#">Напої</a>
+            </li>
+
+            <li class="category-menu__item" data-value="4">
+              <a class="category-menu__link category-menu__link--active" href="#">Бургери</a>
+            </li>
+
+            <li class="category-menu__item" data-value="5">
+              <a class="category-menu__link" href="#">Сніданки</a>
+            </li>
+
+            <li class="category-menu__item" data-value="6">
+              <a class="category-menu__link" href="#">Обіди</a>
+            </li>
+
+            <li class="category-menu__item" data-value="7">
+              <a class="category-menu__link" href="#">Десерти</a>
+            </li>
+
+            <li class="category-menu__item" data-value="8">
+              <a class="category-menu__link" href="#">Ціна на весь день</a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="products__content">
+        <form class="product-search" action="#">
+          <input class="product-search__input" type="text" name="product-search" placeholder=" ">
+          <label class="product-search__label">Пошук</label>
+        </form>
+
+        <ul class="category-tags">
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-all-tag" value="all">
+            <label class="category-tags__label" for="category-all-tag">Всі</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-savory-tag"
+              value="savory">
+            <label class="category-tags__label" for="category-savory-tag">Сендвічі</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-togo-fave-tag"
+              value="togo-fave">
+            <label class="category-tags__label" for="category-togo-fave-tag">Обране</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-featured-tag"
+              value="featured">
+            <label class="category-tags__label" for="category-featured-tag">Улюблені</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-sweet-tag" value="sweet">
+            <label class="category-tags__label" for="category-sweet-tag">Десерт</label>
+          </li>
+
+          <li class="category-tags__item">
+            <input class="category-tags__input" type="radio" name="category-tags" id="category-vegetarian-tag"
+              value="vegetarian">
+            <label class="category-tags__label" for="category-vegetarian-tag">Вегетаріанські</label>
+          </li>
+
+        </ul>
+
+        <ul class="products-list">
+
+          <li class="products-list__item">
+
+            <article class="product-card">
+              <img class="product-card__img" src="images/product/burger/burger-1.jpg" alt="Зробіть власний бургер"
+                loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Зробіть власний бургер</h3>
+                <span class="product-card__number">Cal 1250-570</span>
+                <div class="product-card__text">
+                  <p>Листя салату, помідори, червона цибуля, солоні огірки та булочка бріош включені. Подається з
+                    хвилеподібно нарізаною картоплею фрі.</p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card product-card--fave">
+              <img class="product-card__img" src="images/product/burger/burger-2.jpg" alt="Подвійний Чізбургер"
+                loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Подвійний Чізбургер</h3>
+                <span class="product-card__number">Cal 1580-120</span>
+                <div class="product-card__text">
+                  <p>На вибір американський, швейцарський або витриманий білий сир чеддер з листям салату, помідорами,
+                    червоною цибулею та маринованими огірками на булочці бріош.</p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card">
+              <img class="product-card__img" src="images/product/burger/burger-3.jpg"
+                alt="Чізбургер з беконом і авокадо" loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Чізбургер з беконом і авокадо</h3>
+                <span class="product-card__number">Cal 1510-670</span>
+                <div class="product-card__text">
+                  <p>Бекон, свіжий авокадо, витриманий білий сир чеддер, майонез, листя салату, помідори, червона цибуля
+                    та мариновані огірки на булочці бріош.</p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card">
+              <img class="product-card__img" src="images/product/burger/burger-4.jpg" alt="Бурбон Бургер з беконом"
+                loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Бурбон Бургер з беконом</h3>
+                <span class="product-card__number">Cal 680-1570</span>
+                <div class="product-card__text">
+                  <p>Витриманий білий сир чеддер, бекон, пасеровані гриби, смажений болгарський перець і цибуля,
+                    соус бурбон, листя салату, помідори, червона цибуля та солоні огірки на булочці бріош.
+                    Подається з хвилястою нарізкою
+                    картопля фрі</p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card product-card--fave">
+              <img class="product-card__img" src="images/product/burger/burger-5.jpg" alt="Бургер з яйцем"
+                loading="lazy">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Бургер з яйцем</h3>
+                <span class="product-card__number">Cal 340-1820
+                </span>
+                <div class="product-card__text">
+                  <p>Яйце, бекон і американський сир на булочці бріош. Подається з хвилеподібно нарізаною картоплею фрі.
+                  </p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+          <li class="products-list__item">
+
+            <article class="product-card">
+              <img class="product-card__img" src="images/product/burger/burger-5.jpg" alt="Гострий Бургер">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Гострий Бургер
+                </h3>
+                <span class="product-card__number">Cal 800-1290
+                </span>
+                <div class="product-card__text">
+                  <p>Витриманий білий сир чеддер, бекон, халапеньо, соус із 5 перців, майонез, листя салату, помідори,
+                    червона цибуля та мариновані огірки на булочці бріош.
+                  </p>
+                </div>
+                <button class="order-btn">Замовити</button>
+              </div>
+            </article>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+
+      <div class="footer__box">
+        <a class="footer__logo" href="#">
+          <img src="images/footer-logo.svg" alt="">
+        </a>
+        <ul class="social-list">
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#facebook');">
+              <span class="sr-only">facebook сторінка</span>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#instagram');">
+              <span class="sr-only">instagram сторінка</span>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#twitter');">
+              <span class="sr-only">twitter сторінка</span>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#youtube');">
+              <span class="sr-only">youtube канал</span>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" style="-webkit-mask-image: url('images/sprite.svg#linkedin');">
+              <span class="sr-only">linkedin сторінка</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <nav class="footer__explore explore">
+        <h2 class="footer__title">Explore</h2>
+        <ul class="footer__list">
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Меню
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Наші заклади
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Нагороди
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Подарункові карти
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              FAQs
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Іновації
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Завантажити
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <nav class="footer__about about">
+        <h2 class="footer__title">About Us</h2>
+        <ul class="footer__list">
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Компанія
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Кар'єра
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Новини
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Контакти
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Франчайзинг
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Інвестори
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <nav class="footer__values values">
+        <h2 class="footer__title">Values</h2>
+        <ul class="footer__list">
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Соціальний вплив
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Відмінність
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Сім'я та громада
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Їжа
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Наші люди
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Навколишнє середовище
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer> 
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
