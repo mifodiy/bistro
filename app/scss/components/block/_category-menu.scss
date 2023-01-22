@@ -1,0 +1,157 @@
+.category-menu {
+  padding: 24px 12px;
+  color: $accent;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  max-width: 100%;
+
+  @include mq("tablet") {
+    padding: 24px 0;
+    color: $color-title;
+  }
+
+  &__btn {
+    display: none;
+
+    @include mq("tablet") {
+      display: block;
+      padding: 10px 35px 10px 15px;
+      background-color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      border: 1px solid #fff;
+      position: relative;
+      z-index: 3;
+      color: $color-title;
+      border-radius: 15px;
+      cursor: pointer;
+      max-width: 100%;
+      width: 100%;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    &::before {
+      @include pseudo;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      mask-image: url("../images/sprite.svg#chevron-down");
+      background-color: $accent;
+      mask-position: center;
+      mask-size: cover;
+      mask-repeat: no-repeat;
+      transition: transform 0.5s ease-in-out;
+      transform-origin: center;
+    }
+
+    &.active {
+      border-color: #000;
+
+      &::before {
+        transform: rotateX(180deg) translateY(50%);
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  &__list {
+
+    @include mq("tablet") {
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      max-height: 200px;
+      overflow: auto;
+      margin: 0;
+      list-style-type: none;
+      opacity: 0;
+      pointer-events: none;
+      transform-origin: top left;
+      transform: scale(1, 0);
+      transition: all ease-in-out .3s;
+      z-index: 2;
+      background-color: #fff;
+      box-shadow: 0px 2px rgba(110, 111, 113, .24);
+      border-radius: 0 0 20px 20px;
+      margin-top: -10px;
+      padding-top: 10px;
+    }
+
+    &.active {
+
+      @include mq("tablet") {
+        opacity: 1;
+        pointer-events: auto;
+        transform: scale(1, 1);
+      }
+
+    }
+  }
+
+  &__item {
+
+    @include mq("tablet") {
+      display: block;
+      list-style-type: none;
+      background-color: #fff;
+      transition: all ease-in-out .3s;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__link {
+    padding: 16px 22px 14px;
+    display: inline-block;
+    border-radius: 40px;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+
+    @include mq("tablet") {
+      border-radius: 0;
+      width: 100%;
+    }
+
+    &::after {
+      @include pseudo;
+      bottom: 14px;
+      left: 22px;
+      width: calc(100% - 44px);
+      height: 2px;
+      background-color: $accent;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform .5s;
+
+      @include mq("tablet") {
+        display: none;
+      }
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+
+    &.category-menu__link--active {
+      background-color: #F5F5F5;
+
+      @include mq("tablet") {
+        background-color: hsl(220, 1%, 44%);
+        color: #fff;
+      }
+    }
+  }
+}

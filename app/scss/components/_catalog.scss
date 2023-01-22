@@ -1,0 +1,27 @@
+.catalog {
+  padding-bottom: 80px;
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+
+    @include mq("tablet") {
+      flex-direction: column;
+    }
+
+  }
+
+  &__content {
+    position: relative;
+    flex-basis: calc(75% - 0.01px - 40px);
+    max-width: calc(75% - 0.01px - 40px);
+    min-width: 0;
+
+    @include mq("tablet") {
+      padding-top: 120px;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+}
