@@ -165,5 +165,17 @@ $(function () {
     headerInner.classList.toggle('opened');
   })
 
+  const aboutUsMobileBtn = document.querySelector('.side-menu__link--aboutus');
+  const backBtn = document.querySelector('.aboutus-mobile__btn');
+
+  aboutUsMobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('opened');
+  });
+
+  backBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('opened');
+  });
+
+
 });
 
